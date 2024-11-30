@@ -31,7 +31,7 @@ export default function Carousel() {
   }
 
   return (
-    <div className="w-full min-h-[408] flex items-center md:gap-8 mt-6 md:mt-0">
+    <div className="w-full min-h-[408px] flex items-center md:gap-8 mt-6 md:mt-0">
       <div className="md:px-2">
         <button className="hover:-translate-x-1 transition-all" type="button">
           <Icons name="icon-chevron-left" width={32} height={32} />
@@ -42,7 +42,7 @@ export default function Carousel() {
         {carouselContent.map((item, index) => (
           <div
             data-tooltip-id={`carousel-content-${index + 1}`}
-            className={`p-9 h-[408] w-fit rounded-xl bg-white border gap-9 flex flex-col items-center justify-between absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
+            className={`p-9 h-[408px] w-fit rounded-xl bg-white border gap-9 flex flex-col items-center justify-between absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
               index === 0 ? 'z-10 scale-100' : 'scale-90'
             } ${index === 1 ? 'left-[30%]' : index === 2 ? 'left-[70%]' : 'left-1/2'}`}
             key={item.id}
@@ -50,7 +50,7 @@ export default function Carousel() {
               boxShadow: index === 0 ? '0 0 0.5em #999' : '',
             }}>
             <div className="flex flex-col items-center gap-4">
-              <div className="relative w-[120] h-[120]">
+              <div className="relative w-[120px] h-[120px]">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <Image src={item.avatar} alt={`avatar ${index + 1}`} width={400} height={200} />
                 </div>

@@ -30,19 +30,19 @@ export default function Footer() {
 
   return (
     <footer className="w-full flex items-center justify-center py-8 mt-10 md:mt-0">
-      <div className="2xl:w-[1200] h-max px-4 pb-6 2xl:px-0 2xl:pb-0 flex flex-col gap-6">
+      <div className="2xl:w-[1200px] h-max px-4 pb-6 2xl:px-0 2xl:pb-0 flex flex-col gap-6">
         <div className="grid grid-cols-2 md:grid-cols-12 gap-8 md:gap-6">
           <div className="min-h-20 col-span-4 md:col-span-4 flex flex-col gap-2 font-bold">
             <div className="mb-6">
               <Icons name="logo-md" />
             </div>
-            <div className="text-[14]">{footerContent?.desc}</div>
-            <div className="text-[14]">{footerContent?.phone}</div>
-            <div className="text-[14]">{footerContent?.email}</div>
+            <div className="text-[14px]">{footerContent?.desc}</div>
+            <div className="text-[14px]">{footerContent?.phone}</div>
+            <div className="text-[14px]">{footerContent?.email}</div>
           </div>
 
           {footerContent?.services.map((item, index) => (
-            <div className="min-h-20 py-4 flex flex-col gap-4 col-span-2 text-[14]" key={index}>
+            <div className="min-h-20 py-4 flex flex-col gap-4 col-span-2 text-[14px]" key={index}>
               <div className="px-4 h-8 flex items-center">
                 <Icons name={item.icon} />
               </div>
@@ -73,7 +73,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="font-bold text-[13]">ⓒ {new Date().getFullYear()} Hyperhire</div>
+        <div className="font-bold text-[13px]">ⓒ {new Date().getFullYear()} Hyperhire</div>
       </div>
     </footer>
   );

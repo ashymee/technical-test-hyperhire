@@ -34,7 +34,7 @@ export default function SliderContent() {
           <div className="flex items-center text-white">
             {sliderContent.map((item, index) => (
               <div
-                className="w-[332] h-[88] mr-4 bg-white/20 hover:bg-white/30 cursor-pointer transition-all rounded-xl flex items-center p-4 gap-6"
+                className="w-[332px] h-[88px] mr-4 bg-white/20 hover:bg-white/30 cursor-pointer transition-all rounded-xl flex items-center p-4 gap-6"
                 key={index}>
                 <div className="bg-white/20 rounded-lg p-4">
                   <Icons name={item.icon} />

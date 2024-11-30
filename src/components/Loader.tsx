@@ -14,5 +14,5 @@ export default function Loader({ size = 1, isSlider = false }: LoaderProps) {
     );
   }
 
-  return <div className={`w-full ${isSlider ? 'h-[88]' : 'h-2/3'} bg-white/20 animate-pulse rounded-lg`} />;
+  return <div className={`w-full ${isSlider ? 'h-[88px]' : 'h-2/3'} bg-white/20 animate-pulse rounded-lg`} />;
 }
