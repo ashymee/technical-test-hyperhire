@@ -22,7 +22,7 @@ export default function Main() {
       </div>
 
       {/* background */}
-      <div className="include absolute top-0 left-0 right-0 bottom-0 -z-10 h-[930px] md:h-svh 2xl:h-[929px]">
+      <div className="include absolute top-0 left-0 right-0 bottom-0 -z-10 h-[950px] md:h-svh 2xl:h-[929px]">
         <Image
           src={background}
           alt="background"
