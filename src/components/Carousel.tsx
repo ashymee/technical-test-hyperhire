@@ -55,8 +55,8 @@ export default function Carousel() {
                   <Image src={item.avatar} alt={`avatar ${index + 1}`} width={400} height={200} />
                 </div>
 
-                <div className="h-[18] w-[25] absolute bottom-1 right-1 z-30">
-                  <Image src={item.nationality} alt="nationality" width={400} height={200} className="rounded-[2px]" />
+                <div className="absolute bottom-1 right-1 z-30">
+                  <Image src={item.nationality} alt="nationality" width={18} height={25} className="rounded-[2px]" />
                 </div>
               </div>
 
